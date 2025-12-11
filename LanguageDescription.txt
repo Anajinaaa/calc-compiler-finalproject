@@ -1,1 +1,62 @@
+CALC Programming Language — Specification
+-----------------------------------------
+
+Overview
+--------
+CALC is a small programming language designed for simple mathematical scripting.
+It supports variable assignment and print statements. CALC programs compile into
+Python code using the included compiler.
+
+Goals of CALC
+-------------
+- Extremely simple syntax
+- Easy for beginners to read and write
+- Demonstrates how compilers translate source code
+- Focuses on arithmetic and expressions
+
+Syntax Rules
+------------
+
+1. Variable Assignment
+   Syntax:
+       let <variable> = <expression>
+
+   Examples:
+       let x = 10
+       let y = x + 5
+       let z = (x * y) - 3
+
+
+2. Print Statement
+   Syntax:
+       print <expression>
+
+   Examples:
+       print x
+       print x + y
+       print (x * 2) - 5
+
+
+3. Expressions
+   Expressions may use:
+   - integers
+   - variables
+   - +, -, *, /
+   - parentheses
+
+   Examples:
+       x + 10
+       (x * 2) - 5
+       a + b * (c - 1)
+
+Program Structure
+-----------------
+A CALC program consists of one statement per line. Blank lines are ignored.
+
+Compilation
+-----------
+Run:
+    python compiler.py sample.calc output.py
+
+This generates a Python file that can be executed normally.
 
